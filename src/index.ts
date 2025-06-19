@@ -5,7 +5,7 @@ import { AvatarRenderer } from "./avatarrenderer";
 
 // Engine
 const engine = new PoseEngine();
-const token = 'UYA2vI4MiTDVvy5ev2YHZafVMTp8YE_Q'
+const token = 'kpnLEyBrqfPTEhdCmh3XU-D8alGVKC9B'
 
 // Parameters
 const urlParams = new URLSearchParams(window.location.search);

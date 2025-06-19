@@ -11,14 +11,16 @@
   "devDependencies": {
     "@types/three": "^0.161.2",
     "copyfiles": "^2.4.1",
+    "cpx": "^1.5.0",
+    "ncp": "^2.0.0",
     "vite": "^6.3.5"
   },
   "scripts": {
     "start": "vite",
-    "build": "npx vite build",
+    "build": "vite build",
     "serve": "vite preview",
-    "postinstall": "npm run post:wasm",
-    "post:wasm": "cp node_modules/@geenee/bodytracking/dist/*.wasm public/"
+    "postinstall": "node copy-wasm.js",
+    "post:wasm": "cpx \"node_modules/@geenee/bodytracking/dist/*.wasm\" public/"
   },
   "browserslist": {
     "production": [

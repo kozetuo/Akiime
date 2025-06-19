@@ -18,7 +18,7 @@
     "build": "vite build",
     "serve": "vite preview",
     "postinstall": "npm run post:wasm",
-    "post:wasm": "copyfiles -f \"node_modules/@geenee/bodytracking/dist/*.wasm\" public/"
+    "post:wasm": "cp node_modules/@geenee/bodytracking/dist/*.wasm public/"
   },
   "browserslist": {
     "production": [

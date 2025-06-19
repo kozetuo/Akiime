@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "vite build",
+    "build": "npx vite build",
     "serve": "vite preview",
     "postinstall": "npm run post:wasm",
     "post:wasm": "cp node_modules/@geenee/bodytracking/dist/*.wasm public/"

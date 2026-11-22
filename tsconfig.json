@@ -12,12 +12,10 @@
         "skipLibCheck": true,
         "noEmit": true,
         "esModuleInterop": true,
-        "moduleResolution": "node",
-        "target": "es6",
+        "moduleResolution": "bundler",
+        "target": "es2022",
         "module": "esnext",
         "lib": ["esnext", "webworker", "dom", "dom.iterable"]
     },
-    "buildOptions": {
-        "incremental": true
-    }
+    "include": ["src/selfie/**/*.ts", "src/vite-env.d.ts"]
 }

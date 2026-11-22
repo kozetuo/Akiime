@@ -1,54 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="logo.svg" type="image/svg+xml" />
-    <link rel="icon" href="favicon.ico"/>
-    <link rel="apple-touch-icon" href="logo192.png" />
-    <link rel="manifest" href="manifest.json" />
-    <link rel="stylesheet" href="./src/index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#111310" />
+    <meta name="description" content="Your expressions, a new form. Meet your face-driven fashion avatar in Akiime Selfie Studio." />
+    <title>Akiime — Selfie Studio</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23d6fc53'/%3E%3Cpath d='M16 48 29 16h7l13 32H38l-2-7H26l-2 7Zm13-15h5l-2-8Z' fill='%23111310'/%3E%3C/svg%3E" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script type="module" src="./src/index.ts"></script>
-    <div id="loadui" class="full-screen loadui">
-        <h4>powered by</h4>
-        <h2>GEENEE</h3>
-        <div style="flex-grow: 1; align-content: center;">
-            <div class="cube-container">
-                <div class="cube">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-            <p>Virtual try-on is loading</p>
-            <p>This may take a moment</p>
-        </div>
-    </div>
-    <div id="root" class="full-screen"></div>
-    <button id="camera-switch" class="button"
-        style="position: absolute; top: 0.5rem; right: 0.5rem; z-index: 1;"
-    >
-        <div class="icon" style="mask:url(./switch.svg);"></div>
-    </button>
-    <button id="record" class="button"
-        style="position: absolute; top: 0.5rem; left: 0.5rem; z-index: 1;"
-    >
-        <div class="icon" style="mask:url(./shot.svg);"></div>
-    </button>
-    <input type="checkbox" id="outfit-switch" class="button checkbox"
-        style="position: absolute; top: 3.5rem; right: 0.5rem; z-index: 1;"
-    ></input>
-    <div id="courosel" class="carousel">
-        <input type="radio" name="model" value="onesie" class="carousel-item"
-            style="background-image: url(./preview/onesie.png);" checked=true></input>
-        <input type="radio" name="model" value="jacket" class="carousel-item"
-            style="background-image: url(./preview/jacket.png);"></input>
-    </div>
+    <div id="app"></div>
+    <noscript>Akiime needs JavaScript to animate your character.</noscript>
+    <script type="module" src="/src/selfie/main.ts"></script>
   </body>
 </html>
